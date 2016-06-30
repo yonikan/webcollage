@@ -1,0 +1,115 @@
+
+/* navigation ----------------*/
+.navigation {
+	float: right;
+
+	&.open {
+		opacity: 0.9;
+		visibility: visible;
+		transition: opacity 0.5s;
+	}
+	li {
+		display: inline-block;
+	}
+	a {
+		color: #fff;
+		font-size: 14px;
+		font-weight: 700;
+		margin-left: 40px;
+		text-transform: uppercase;
+	}
+	a:hover, .navigation a.active {
+		color: #1ABC9C;
+	}
+}
+
+
+/* nav-toggle -------------------------------------------*/
+.nav-toggle {
+	display: none;
+	height: 44px;
+	overflow: hidden;
+	position: fixed;
+	right: 5%;
+	text-indent: 100%;
+	top: 32px;
+	white-space: nowrap;
+	width: 44px;
+	z-index: 99999;
+	transition: all 0.3s;
+	background: transparent;
+}
+.nav-toggle:before, .nav-toggle:after {
+	border-radius: 50%;
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	transform: translateZ(0);
+	backface-visibility: hidden;
+	transition-property: transform;
+}
+.nav-toggle:before {
+	transform: scale(1);
+	transition-duration: 0.3s;
+	color: #f05da3;
+}
+.nav-toggle:after {
+	background-color: transparent;
+	transform: scale(0);
+	transition-duration: 0s;
+	color: #f05da3;
+}
+.nav-toggle span {
+	bottom: auto;
+	display: inline-block;
+	height: 3px;
+	left: 50%;
+	position: absolute;
+	right: auto;
+	top: 50%;
+	width: 18px;
+	z-index: 10;
+	transform: translateX(-50%) translateY(-50%);
+}
+.nav-toggle span:before, .nav-toggle span:after {
+	background-color: #fff;
+	content: "";
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	transform: translateZ(0);
+	backface-visibility: hidden;
+	transition: transform 0.3s;
+}
+.nav-toggle span:before {
+	transform: translateY(-6px) rotate(0deg);
+}
+.nav-toggle span:after {
+	transform: translateY(6px) rotate(0deg);
+}
+
+
+/* close-nav is for the close to open animation ----------------*/
+.nav-toggle.close-nav:before {
+	transform: scale(0);
+}
+.nav-toggle.close-nav:after {
+	transform: scale(1);
+}
+.nav-toggle.close-nav span {
+	background-color: rgba(255, 255, 255, 0);
+}
+.nav-toggle.close-nav span:before, .nav-toggle.close-nav span:after {
+	background-color: #fff;
+}
+.nav-toggle.close-nav span:before {
+	transform: translateY(0) rotate(45deg);
+}
+.nav-toggle.close-nav span:after {
+	transform: translateY(0) rotate(-45deg);
+}

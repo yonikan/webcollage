@@ -1,0 +1,53 @@
+
+label {
+    display: block;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+/* Centre the form within the page */
+form {
+    margin: 0 auto;
+    width: 459px;
+}
+
+/* Style the text boxes */
+input, textarea {
+	width: 439px;
+	height: 47px;
+	background: #fff;
+	border: 1px solid #dedede;
+	padding: 20px;
+	margin-top: 3px;
+	font-size: 0.9em;
+	color: #3a3a3a;
+
+    // -moz-border-radius:5px;
+    // -webkit-border-radius:5px;
+    border-radius:5px;
+}
+
+input:focus, textarea:focus {
+    border: 1px solid #97d6eb;
+}
+
+textarea {
+	height: 213px;
+	background: url(ddd.jpg) right no-repeat #fff;
+}
+
+
+#submit {
+    width: 127px;
+    height: 38px;
+    background: url(dd.jpg) #3a3a3a;
+    color: #fff;
+    // text-indent:-9999px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    opacity: .9;
+}

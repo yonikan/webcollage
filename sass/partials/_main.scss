@@ -1,0 +1,156 @@
+
+/* ------------------------------------------------------------------------------
+	Colors definitions
+-------------------------------------------------------------------------------*/
+$white: #fff;
+$black: #000;
+$turkiz: #1ABC9C;
+
+
+/* ------------------------------------------------------------------------------
+	Global Styles
+-------------------------------------------------------------------------------*/
+body {
+	// font-family: "Open Sans", Arial, sans-serif;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	color: #6c7279;
+}
+a {
+	color: #1ABC9C;
+}
+a:hover, a:focus {
+	text-decoration: none;
+	transition: background-color, color, 0.3s;
+}
+ul, ol {
+	margin: 0;
+	padding: 0;
+}
+ul li {
+	list-style: none;
+}
+
+.section {
+	padding: 100px 0;
+}
+.no-padding {
+	padding: 0;
+}
+.no-gutter [class*=col-] {
+	padding-right: 0;
+	padding-left: 0;
+}
+.space {
+	margin-top: 60px;
+}
+.backgound-grey {
+  background-color: #e9f0f2;
+}
+
+
+/* ------------------------------------------------------------------------------
+	Typography
+-------------------------------------------------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Open%20Sans:300,400,500,600,700);
+
+p {
+	font-size: 14px;
+	line-height: 22.4px;
+	color: #6c7279;
+}
+h1 {
+	font-size: 65px;
+	color: #2d3033;
+}
+h2 {
+	font-size: 40px;
+	color: #2d3033;
+}
+h3 {
+	font-size: 28px;
+	color: #2d3033;
+	font-weight: 300;
+}
+h4 {
+	font-size: 22px;
+	color: #2d3033;
+	font-weight: 400;
+}
+h5 {
+	font-size: 14px;
+	color: #2d3033;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.btn {
+	background-color: #1ABC9C;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+	border: 0;
+	// -moz-border-radius: 2px;
+	// -webkit-border-radius: 2px;
+	border-radius: 2px;
+	display: inline-block;
+	text-transform: uppercase;
+	border: 1px solid #1ABC9C;
+}
+.btn:hover, .btn:focus {
+	background-color: transparent;
+	color: #1ABC9C;
+}
+.btn-large {
+	padding: 15px 40px;
+}
+
+
+/* ------------------------------------------------------------------------------
+	Header
+-------------------------------------------------------------------------------*/
+#header {
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	background: rgba(255, 255, 255, 0.35);
+
+	.header-content {
+		margin: 0 auto;
+		max-width: 1170px;
+		padding: 60px 0;
+		width: 100%;
+		// -moz-transition: padding 0.3s;
+		// -o-transition: padding 0.3s;
+		// -webkit-transition: padding 0.3s;
+		transition: padding 0.3s;
+	}
+	.logo {
+		float: left;
+		font-size:24px;
+		font-weight:700;
+		color: #000;
+		text-decoration:none;
+		text-transform:uppercase;
+		letter-spacing:7px;
+	}
+	&.fixed {
+		background-color: rgb(44, 62, 80);
+
+		a {
+			color: #fff;
+		}
+
+		a:hover, a:active {
+			color: #1ABC9C;
+		}
+
+		.header-content {
+			border-bottom: 0;
+			padding: 25px 0;
+		}
+		.nav-toggle {
+			top: 18px;
+			color: #000;
+		}
+	}
+}

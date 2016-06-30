@@ -1,0 +1,40 @@
+
+// @import "main";
+@import "partials/main";
+@import "partials/navigation";
+
+@import "sections/section-banner";
+@import "sections/section-services";
+@import "sections/section-howto";
+@import "sections/section-contact";
+
+@import "partials/media-queries";
+
+
+.btn-ultra {
+    background: #fff;
+    border: 4px solid #fff;
+    border-radius: 0;
+    box-shadow: none;
+    color: $turkiz;
+    font-weight: 700;
+    padding: 18px 45px;
+    min-width: 380px;
+    font-size: 24px;
+    margin: 0 40px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    /* transition: all .25s; */
+    /* -webkit-backface-visibility: hidden; */
+    /* -webkit-transform: translateZ(0) scale(1,1); */
+}
+
+.btn-ultra:hover {
+    background: transparent;
+    border: 4px solid #fff;
+    color: #fff;
+    padding: 30px 50px;
+    margin-top: -12px;
+    margin-bottom: -12px
+}
