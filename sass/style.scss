@@ -1,5 +1,6 @@
 
 // @import "main";
+@import "partials/vars";
 @import "partials/main";
 @import "partials/navigation";
 
@@ -16,7 +17,7 @@
     border: 4px solid #fff;
     border-radius: 0;
     box-shadow: none;
-    color: $turkiz;
+    color: $orange;
     font-weight: 700;
     padding: 18px 45px;
     min-width: 380px;

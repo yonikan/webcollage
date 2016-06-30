@@ -5,6 +5,7 @@
 $white: #fff;
 $black: #000;
 $turkiz: #1ABC9C;
+$orange: #f56857;
 
 
 /* ------------------------------------------------------------------------------
@@ -17,7 +18,7 @@ body {
 	color: #6c7279;
 }
 a {
-	color: #1ABC9C;
+	color: $orange;
 }
 a:hover, a:focus {
 	text-decoration: none;
@@ -84,7 +85,7 @@ h5 {
 	font-weight: 700;
 }
 .btn {
-	background-color: #1ABC9C;
+	background-color: $orange;
 	color: #fff;
 	font-size: 16px;
 	font-weight: 600;
@@ -94,11 +95,11 @@ h5 {
 	border-radius: 2px;
 	display: inline-block;
 	text-transform: uppercase;
-	border: 1px solid #1ABC9C;
+	border: 1px solid $orange;
 }
 .btn:hover, .btn:focus {
 	background-color: transparent;
-	color: #1ABC9C;
+	color: $orange;
 }
 .btn-large {
 	padding: 15px 40px;
@@ -112,7 +113,9 @@ h5 {
 	position: fixed;
 	width: 100%;
 	z-index: 999;
-	background: rgba(255, 255, 255, 0.35);
+	background: transparent;
+	// background: rgba(255, 255, 255, 0.35);
+
 
 	.header-content {
 		margin: 0 auto;
@@ -134,14 +137,14 @@ h5 {
 		letter-spacing:7px;
 	}
 	&.fixed {
-		background-color: rgb(44, 62, 80);
+		background-color: rgba(97, 97, 97, 0.9);
 
 		a {
 			color: #fff;
 		}
 
 		a:hover, a:active {
-			color: #1ABC9C;
+			color: $orange;
 		}
 
 		.header-content {

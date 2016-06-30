@@ -1,7 +1,7 @@
 
 #features {
   h4 {
-   color: #1ABC9C;
+   color: $orange;
    margin-top: 0;
   }
   .col-sm-4.left {
@@ -33,7 +33,7 @@
   height: 0;
   padding-bottom: 100%;
   padding-bottom: calc(100% - 4px);
-  border: 2px solid #1ABC9C;
+  border: 2px solid $orange;
   border-radius: 50%;
   transition: all 0.2s ease-in-out;
  }
@@ -45,12 +45,12 @@
   line-height: 1em;
   margin-top: -0.5em;
   text-align: center;
-  color: #1ABC9C;
+  color: $orange;
   transition: all 0.2s ease-in-out;
  }
 
 .circle-icon-rspv :hover:after {
-  background-color: #1ABC9C;
+  background-color: $orange;
  }
 
 .circle-icon-rspv :hover .icon {
@@ -58,7 +58,7 @@
  }
 
 #features .left > .row:hover .circle-icon-rspv:after, #features .right > .row:hover .circle-icon-rspv:after {
-  background-color: #1ABC9C;
+  background-color: $orange;
  }
 
 #features .left > .row:hover .icon, #features .right > .row:hover .icon {

@@ -2,6 +2,9 @@
 	Colors definitions
 -------------------------------------------------------------------------------*/
 /* ------------------------------------------------------------------------------
+	Colors definitions
+-------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------
 	Global Styles
 -------------------------------------------------------------------------------*/
 @import url(http://fonts.googleapis.com/css?family=Open%20Sans:300,400,500,600,700);
@@ -12,7 +15,7 @@ body {
 }
 
 a {
-  color: #1ABC9C;
+  color: #f56857;
 }
 
 a:hover, a:focus {
@@ -90,7 +93,7 @@ h5 {
 }
 
 .btn {
-  background-color: #1ABC9C;
+  background-color: #f56857;
   color: #fff;
   font-size: 16px;
   font-weight: 600;
@@ -98,12 +101,12 @@ h5 {
   border-radius: 2px;
   display: inline-block;
   text-transform: uppercase;
-  border: 1px solid #1ABC9C;
+  border: 1px solid #f56857;
 }
 
 .btn:hover, .btn:focus {
   background-color: transparent;
-  color: #1ABC9C;
+  color: #f56857;
 }
 
 .btn-large {
@@ -117,7 +120,7 @@ h5 {
   position: fixed;
   width: 100%;
   z-index: 999;
-  background: rgba(255, 255, 255, 0.35);
+  background: transparent;
 }
 
 #header .header-content {
@@ -140,7 +143,7 @@ h5 {
 }
 
 #header.fixed {
-  background-color: #2c3e50;
+  background-color: rgba(97, 97, 97, 0.9);
 }
 
 #header.fixed a {
@@ -148,7 +151,7 @@ h5 {
 }
 
 #header.fixed a:hover, #header.fixed a:active {
-  color: #1ABC9C;
+  color: #f56857;
 }
 
 #header.fixed .header-content {
@@ -186,7 +189,7 @@ h5 {
 }
 
 .navigation a:hover, .navigation .navigation a.active {
-  color: #1ABC9C;
+  color: #f56857;
 }
 
 /* nav-toggle -------------------------------------------*/
@@ -313,7 +316,7 @@ h5 {
 }
 
 .banner {
-  background: url(../dist/img/backs/banner.jpg) #1ABC9C;
+  background: url(../dist/img/backs/orange-back.jpg) #1ABC9C;
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -379,11 +382,11 @@ blockquote {
   height: 88px;
   border-radius: 50%;
   color: #FFFFFF;
-  background: #1ABC9C;
+  background: #f56857;
 }
 
 #features h4 {
-  color: #1ABC9C;
+  color: #f56857;
   margin-top: 0;
 }
 
@@ -418,7 +421,7 @@ blockquote {
   height: 0;
   padding-bottom: 100%;
   padding-bottom: calc(100% - 4px);
-  border: 2px solid #1ABC9C;
+  border: 2px solid #f56857;
   border-radius: 50%;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -431,13 +434,13 @@ blockquote {
   line-height: 1em;
   margin-top: -0.5em;
   text-align: center;
-  color: #1ABC9C;
+  color: #f56857;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
 .circle-icon-rspv :hover:after {
-  background-color: #1ABC9C;
+  background-color: #f56857;
 }
 
 .circle-icon-rspv :hover .icon {
@@ -445,7 +448,7 @@ blockquote {
 }
 
 #features .left > .row:hover .circle-icon-rspv:after, #features .right > .row:hover .circle-icon-rspv:after {
-  background-color: #1ABC9C;
+  background-color: #f56857;
 }
 
 #features .left > .row:hover .icon, #features .right > .row:hover .icon {
@@ -526,7 +529,7 @@ textarea {
   border: 4px solid #fff;
   border-radius: 0;
   box-shadow: none;
-  color: #1ABC9C;
+  color: #f56857;
   font-weight: 700;
   padding: 18px 45px;
   min-width: 380px;

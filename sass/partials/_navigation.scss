@@ -19,8 +19,21 @@
 		text-transform: uppercase;
 	}
 	a:hover, .navigation a.active {
-		color: #1ABC9C;
+		color: $orange;
 	}
+	// 
+	// a.highlight {
+	//     background: #fff;
+	//     font-weight: 700;
+	//     padding-left: 10px;
+	//     padding-right: 10px;
+	//     color: #f56857;
+	// }
+	// a.highlight:hover {
+	// 		background: transparent;
+	// 		color: #000;
+	// 		border: 2px solid #fff;
+	// }
 }
 
 
