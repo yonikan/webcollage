@@ -2,14 +2,11 @@
 	Colors definitions
 -------------------------------------------------------------------------------*/
 /* ------------------------------------------------------------------------------
-	Colors definitions
--------------------------------------------------------------------------------*/
-/* ------------------------------------------------------------------------------
 	Global Styles
 -------------------------------------------------------------------------------*/
 @import url(http://fonts.googleapis.com/css?family=Open%20Sans:300,400,500,600,700);
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Source Sans Pro", sans-serif, sans-serif;
   font-weight: 400;
   color: #6c7279;
 }
@@ -113,6 +110,39 @@ h5 {
   padding: 15px 40px;
 }
 
+.btn-ultra {
+  background: #fff;
+  border: 4px solid #fff;
+  border-radius: 0;
+  box-shadow: none;
+  color: #f56857;
+  font-weight: 700;
+  padding: 18px 45px;
+  min-width: 380px;
+  font-size: 24px;
+  margin: 0 40px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1, 1);
+}
+
+.btn-ultra:hover {
+  background: transparent;
+  border: 4px solid #fff;
+  color: #fff;
+  padding: 30px 50px;
+  margin-top: -12px;
+  margin-bottom: -12px;
+}
+
+.btn-ultra em {
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 400;
+}
+
 /* ------------------------------------------------------------------------------
 	Header
 -------------------------------------------------------------------------------*/
@@ -182,14 +212,20 @@ h5 {
 
 .navigation a {
   color: #fff;
-  font-size: 14px;
   font-weight: 700;
-  margin-left: 40px;
   text-transform: uppercase;
+  padding: 5px 0;
+  margin: 0 20px;
+  font-size: 16px;
+  border: 2px solid transparent;
 }
 
 .navigation a:hover, .navigation .navigation a.active {
   color: #f56857;
+}
+
+.navigation a:active, .navigation a:hover {
+  outline: 0;
 }
 
 /* nav-toggle -------------------------------------------*/
@@ -324,7 +360,7 @@ h5 {
 }
 
 .banner-text {
-  padding-top: 45%;
+  padding-top: 30%;
 }
 
 .banner-text h1 {
@@ -522,32 +558,4 @@ textarea {
 
 #submit:hover {
   opacity: .9;
-}
-
-.btn-ultra {
-  background: #fff;
-  border: 4px solid #fff;
-  border-radius: 0;
-  box-shadow: none;
-  color: #f56857;
-  font-weight: 700;
-  padding: 18px 45px;
-  min-width: 380px;
-  font-size: 24px;
-  margin: 0 40px;
-  -webkit-font-smoothing: antialiased;
-  -webkit-transition: all .25s;
-  -moz-transition: all .25s;
-  /* transition: all .25s; */
-  /* -webkit-backface-visibility: hidden; */
-  /* -webkit-transform: translateZ(0) scale(1,1); */
-}
-
-.btn-ultra:hover {
-  background: transparent;
-  border: 4px solid #fff;
-  color: #fff;
-  padding: 30px 50px;
-  margin-top: -12px;
-  margin-bottom: -12px;
 }
