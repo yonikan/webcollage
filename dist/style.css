@@ -2,9 +2,11 @@
 	Colors definitions
 -------------------------------------------------------------------------------*/
 /* ------------------------------------------------------------------------------
+	fonts definitions
+-------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------
 	Global Styles
 -------------------------------------------------------------------------------*/
-@import url(http://fonts.googleapis.com/css?family=Open%20Sans:300,400,500,600,700);
 body {
   font-family: "Source Sans Pro", sans-serif, sans-serif;
   font-weight: 400;
@@ -48,7 +50,7 @@ ul li {
 }
 
 .backgound-grey {
-  background-color: #e9f0f2;
+  background-color: #eef1f2;
 }
 
 /* ------------------------------------------------------------------------------
@@ -89,6 +91,9 @@ h5 {
   font-weight: 700;
 }
 
+/* ------------------------------------------------------------------------------
+	Buttons
+-------------------------------------------------------------------------------*/
 .btn {
   background-color: #f56857;
   color: #fff;
@@ -143,55 +148,36 @@ h5 {
   font-weight: 400;
 }
 
-/* ------------------------------------------------------------------------------
-	Header
--------------------------------------------------------------------------------*/
-#header {
-  position: fixed;
-  width: 100%;
-  z-index: 999;
-  background: transparent;
-}
-
-#header .header-content {
-  margin: 0 auto;
-  max-width: 1170px;
-  padding: 60px 0;
-  width: 100%;
-  -webkit-transition: padding 0.3s;
-  transition: padding 0.3s;
-}
-
-#header .logo {
-  float: left;
-  font-size: 24px;
-  font-weight: 700;
-  color: #000;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 7px;
-}
-
-#header.fixed {
-  background-color: rgba(97, 97, 97, 0.9);
-}
-
-#header.fixed a {
+.btn-ultra-white {
+  background: #f56857;
+  border: 4px solid #f56857;
   color: #fff;
 }
 
-#header.fixed a:hover, #header.fixed a:active {
+.btn-ultra-white:hover {
+  background: transparent;
+  border: 4px solid #f56857;
   color: #f56857;
 }
 
-#header.fixed .header-content {
-  border-bottom: 0;
-  padding: 25px 0;
+/* ------------------------------------------------------------------------------
+	All Sections
+-------------------------------------------------------------------------------*/
+.space {
+  padding: 20px 0;
 }
 
-#header.fixed .nav-toggle {
-  top: 18px;
-  color: #000;
+.lead {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .lead {
+    font-size: 21px;
+  }
 }
 
 /* navigation ----------------*/
@@ -221,7 +207,7 @@ h5 {
 }
 
 .navigation a:hover, .navigation .navigation a.active {
-  color: #f56857;
+  color: #3b3b3b;
 }
 
 .navigation a:active, .navigation a:hover {
@@ -351,12 +337,66 @@ h5 {
           transform: translateY(0) rotate(-45deg);
 }
 
+/* ------------------------------------------------------------------------------
+	Header
+-------------------------------------------------------------------------------*/
+#header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background: transparent;
+}
+
+#header .header-content {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 60px 0;
+  width: 100%;
+  -webkit-transition: padding 0.3s;
+  transition: padding 0.3s;
+}
+
+#header .logo {
+  float: left;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+}
+
+#header.fixed {
+  background-color: rgba(97, 97, 97, 0.9);
+}
+
+#header.fixed a {
+  color: #fff;
+}
+
+#header.fixed a:hover, #header.fixed a:active {
+  color: #f56857;
+}
+
+#header.fixed .header-content {
+  border-bottom: 0;
+  padding: 25px 0;
+}
+
+#header.fixed .nav-toggle {
+  top: 18px;
+  color: #000;
+}
+
+/* ------------------------------------------------------------------------------
+	Banner
+-------------------------------------------------------------------------------*/
 .banner {
   background: url(../dist/img/backs/orange-back.jpg) #1ABC9C;
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 750px;
+  min-height: 1050px;
 }
 
 .banner-text {
@@ -380,182 +420,31 @@ h5 {
   margin-bottom: 80px;
 }
 
-/* Media
----------------------------------- */
-.media .fa {
+/* service ---------------------------------- */
+.service {
+  margin-bottom: 40px;
+}
+
+.service .service-icon .fa {
   font-size: 38px;
-  width: 40px;
-  height: 25px;
   line-height: 48px;
-  padding: 0 5px;
-  text-align: center;
-}
-
-.space {
-  padding: 20px 0;
-}
-
-blockquote {
-  padding: 10px 5px;
-  margin: 0 0 20px;
-  font-size: 17.5px;
-  /* border-left: 5px solid #eee; */
-}
-
-/* block-lists
----------------------------------- */
-.block-list .media-left {
-  width: 60px;
-}
-
-.block-list p {
-  font-size: 14px;
-}
-
-.block-list .fa {
   padding: 20px;
   width: 88px;
   height: 88px;
   border-radius: 50%;
-  color: #FFFFFF;
+  color: #fff;
   background: #f56857;
 }
 
-#features h4 {
-  color: #f56857;
-  margin-top: 0;
+.service .service-content p {
+  font-size: 16px;
 }
 
-#features .col-sm-4.left {
-  text-align: right;
+/* intro ---------------------------------- */
+#intro {
+  margin-bottom: 40px;
 }
 
-#features .col-lg-4 .row {
-  margin-top: 46px;
-  position: relative;
-  left: 0;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-#features .left .row:hover {
-  left: -5px;
-}
-
-#features .right .row:hover {
-  left: 5px;
-}
-
-.circle-icon-rspv {
-  width: 100%;
-}
-
-.circle-icon-rspv :after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 0;
-  padding-bottom: 100%;
-  padding-bottom: calc(100% - 4px);
-  border: 2px solid #f56857;
-  border-radius: 50%;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.circle-icon-rspv .icon {
-  float: left;
-  width: 100%;
-  padding-top: 50%;
-  line-height: 1em;
-  margin-top: -0.5em;
-  text-align: center;
-  color: #f56857;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.circle-icon-rspv :hover:after {
-  background-color: #f56857;
-}
-
-.circle-icon-rspv :hover .icon {
-  color: #fff;
-}
-
-#features .left > .row:hover .circle-icon-rspv:after, #features .right > .row:hover .circle-icon-rspv:after {
-  background-color: #f56857;
-}
-
-#features .left > .row:hover .icon, #features .right > .row:hover .icon {
-  color: #fff;
-}
-
-#features .col-lg-4 .row {
-  margin-top: 46px;
-  position: relative;
-  left: 0;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-#features h4 {
-  font-weight: 300;
-}
-
-#features p {
-  color: #8a9599;
-}
-
-/* customized */
-.text-right {
-  float: right;
-}
-
-label {
-  display: block;
-  margin-top: 20px;
-  letter-spacing: 2px;
-}
-
-/* Centre the form within the page */
-form {
-  margin: 0 auto;
-  width: 459px;
-}
-
-/* Style the text boxes */
-input, textarea {
-  width: 439px;
-  height: 47px;
-  background: #fff;
-  border: 1px solid #dedede;
-  padding: 20px;
-  margin-top: 3px;
-  font-size: 0.9em;
-  color: #3a3a3a;
-  border-radius: 5px;
-}
-
-input:focus, textarea:focus {
-  border: 1px solid #97d6eb;
-}
-
-textarea {
-  height: 213px;
-  background: url(ddd.jpg) right no-repeat #fff;
-}
-
-#submit {
-  width: 127px;
-  height: 38px;
-  background: url(dd.jpg) #3a3a3a;
-  color: #fff;
-  border: none;
-  margin-top: 20px;
-  cursor: pointer;
-}
-
-#submit:hover {
-  opacity: .9;
+#intro .container {
+  background: url(../dist/img/cloud-bg.png);
 }

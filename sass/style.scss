@@ -2,11 +2,13 @@
 // @import "main";
 @import "vars";
 @import "main";
-@import "navigation";
+@import "nav";
 
-@import "sections/section-banner";
+@import "sections/section-header";
 @import "sections/section-services";
-@import "sections/section-howto";
-@import "sections/section-contact";
+@import "sections/section-intro";
+// @import "sections/section-detailed";
+// @import "sections/section-howto";
+// @import "sections/section-contact";
 
-@import "media-queries";
+// @import "sections/media-queries";

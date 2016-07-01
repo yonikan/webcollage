@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+
+	// Background Strech -----------------------------------------------
+	$(".slider-img").backstretch('dist/img/backs/orange-back.jpg');
+
 	// Ajax test -----------------------------------------------
 	$("#ajax-btn").click(function(event){
 
