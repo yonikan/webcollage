@@ -19,7 +19,6 @@ a {
 
 a:hover, a:focus {
   text-decoration: none;
-  -webkit-transition: background-color, color, 0.3s;
   transition: background-color, color, 0.3s;
 }
 
@@ -127,7 +126,6 @@ h5 {
   font-size: 24px;
   margin: 0 40px;
   -webkit-font-smoothing: antialiased;
-  -webkit-transition: all .25s;
   transition: all .25s;
   -webkit-backface-visibility: hidden;
   -webkit-transform: translateZ(0) scale(1, 1);
@@ -188,7 +186,6 @@ h5 {
 .navigation.open {
   opacity: 0.9;
   visibility: visible;
-  -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
 
@@ -226,7 +223,6 @@ h5 {
   white-space: nowrap;
   width: 44px;
   z-index: 99999;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background: transparent;
 }
@@ -239,30 +235,21 @@ h5 {
   position: absolute;
   top: 0;
   width: 100%;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
   transition-property: transform;
-  transition-property: transform, -webkit-transform;
 }
 
 .nav-toggle:before {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  transform: scale(1);
+  transition-duration: 0.3s;
   color: #f05da3;
 }
 
 .nav-toggle:after {
   background-color: transparent;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition-duration: 0s;
-          transition-duration: 0s;
+  transform: scale(0);
+  transition-duration: 0s;
   color: #f05da3;
 }
 
@@ -276,8 +263,7 @@ h5 {
   top: 50%;
   width: 18px;
   z-index: 10;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .nav-toggle span:before, .nav-toggle span:after {
@@ -288,35 +274,26 @@ h5 {
   right: 0;
   top: 0;
   width: 100%;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
+  transform: translateZ(0);
+  backface-visibility: hidden;
   transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .nav-toggle span:before {
-  -webkit-transform: translateY(-6px) rotate(0deg);
-          transform: translateY(-6px) rotate(0deg);
+  transform: translateY(-6px) rotate(0deg);
 }
 
 .nav-toggle span:after {
-  -webkit-transform: translateY(6px) rotate(0deg);
-          transform: translateY(6px) rotate(0deg);
+  transform: translateY(6px) rotate(0deg);
 }
 
 /* close-nav is for the close to open animation ----------------*/
 .nav-toggle.close-nav:before {
-  -webkit-transform: scale(0);
-          transform: scale(0);
+  transform: scale(0);
 }
 
 .nav-toggle.close-nav:after {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 
 .nav-toggle.close-nav span {
@@ -328,13 +305,15 @@ h5 {
 }
 
 .nav-toggle.close-nav span:before {
-  -webkit-transform: translateY(0) rotate(45deg);
-          transform: translateY(0) rotate(45deg);
+  transform: translateY(0) rotate(45deg);
 }
 
 .nav-toggle.close-nav span:after {
-  -webkit-transform: translateY(0) rotate(-45deg);
-          transform: translateY(0) rotate(-45deg);
+  transform: translateY(0) rotate(-45deg);
+}
+
+.test {
+  color: #fff;
 }
 
 /* ------------------------------------------------------------------------------
@@ -352,7 +331,6 @@ h5 {
   max-width: 1170px;
   padding: 60px 0;
   width: 100%;
-  -webkit-transition: padding 0.3s;
   transition: padding 0.3s;
 }
 
@@ -448,3 +426,5 @@ h5 {
 #intro .container {
   background: url(../dist/img/cloud-bg.png);
 }
+
+/*# sourceMappingURL=others/style.css.map */
